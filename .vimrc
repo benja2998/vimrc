@@ -38,6 +38,7 @@ call plug#begin(s:plug_path)
 
 Plug 'github/copilot.vim'
 Plug 'morhetz/gruvbox'
+Plug 'neoclide/coc.nvim'
 
 call plug#end()
 
