@@ -1,6 +1,9 @@
 " Enable syntax highlighting
 syntax on
 
+" Set termguicolors
+set termguicolors
+
 " Show line numbers
 set relativenumber
 set number
