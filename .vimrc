@@ -1,6 +1,15 @@
 " Enable syntax highlighting
 syntax on
 
+set completeopt=menuone,noinsert,noselect
+
+" Use <Tab> to confirm if completion menu is visible, otherwise insert Tab
+inoremap <silent><expr> <Tab> pumvisible() ? coc#_select_confirm() : "\<Tab>"
+
+let g:copilot_no_tab_map = v:true
+
+imap <silent><script><expr> <C-f> copilot#Accept("\<CR>")
+
 " File encoding
 set encoding=utf-8
 set fileencoding=utf-8 
