@@ -46,11 +46,10 @@ endif
 call plug#begin(s:plug_path)
 
 Plug 'github/copilot.vim'
-Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim'
+Plug 'catppuccin/vim'
 
 call plug#end()
 
 set background=dark
-let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox
+colorscheme catppuccin_mocha
